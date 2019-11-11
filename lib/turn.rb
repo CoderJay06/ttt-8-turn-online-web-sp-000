@@ -28,6 +28,8 @@ def turn(board)
   if user_input.between?(1, 9)
     valid_move?(board, index)
     turn(board)
+  else
+    puts "Please enter 1-9:"
   end
 end
 
