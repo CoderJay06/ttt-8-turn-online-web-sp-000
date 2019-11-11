@@ -25,16 +25,6 @@ def turn(board)
   puts "Please enter 1-9:"
   user_input = gets.strip
   input_to_index(user_input)
-  count = 0  
-  while count <= board.length 
-    count += 1
-    if valid_move?(board, index)
-      turn(board)
-      break
-    else
-      puts "Please enter 1-9:"
-    end
-  end
 end
 
 def position_taken?(board, index)
